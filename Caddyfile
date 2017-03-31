@@ -1,6 +1,6 @@
 https://drone.iteam.life {
   tls info@iteam.se
-  proxy / drone-server:80 {
+  proxy / drone-server:8000 {
     transparent
   }
   log stdout
