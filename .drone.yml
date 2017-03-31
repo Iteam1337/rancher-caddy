@@ -2,7 +2,7 @@ pipeline:
   docker:
     image: plugins/docker
     repo: iteam1337/rancher-caddy
-    username: ilix
+    username: ${DOCKER_USER}
     password: ${DOCKER_PASS}
     email: src@ilix.se
     tags: latest
