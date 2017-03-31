@@ -14,6 +14,14 @@ https://izone.iteam.life {
   log stdout
 }
 
+https://rancher.iteam.life {
+  tls info@iteam.se
+  proxy / 172.17.0.1:8080 {
+    transparent
+  }
+  log stdout
+}
+
 https://registry.iteam.life {
   tls info@iteam.se
   proxy / registry:5000 {
@@ -21,4 +29,3 @@ https://registry.iteam.life {
   }
   log stdout
 }
-
