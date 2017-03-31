@@ -1,0 +1,7 @@
+https://izone.iteam.life {
+  tls info@iteam.se
+  proxy / izone-rest:80 {
+    transparent
+  }
+  log stdout
+}
