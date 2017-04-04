@@ -20,6 +20,7 @@ https://rancher.iteam.life {
     transparent
   }
   log stdout
+  websocket
 }
 
 https://registry.iteam.life {
