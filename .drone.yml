@@ -6,3 +6,10 @@ pipeline:
     password: ${DOCKER_PASS}
     email: src@ilix.se
     tags: latest
+  rancher:
+    image: peloton/drone-rancher
+    url: https://rancher.iteam.life
+    access_key: ${RANCHER_ACCESS_KEY}
+    secret_key: ${RANCHER_SECRET_KEY}
+    service: Infra/infra
+    docker_image: iteam1337/rancher-caddy:latest
