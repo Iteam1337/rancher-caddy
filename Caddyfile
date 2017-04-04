@@ -18,7 +18,8 @@ https://rancher.iteam.life {
   tls info@iteam.se
   proxy / 172.17.0.1:8080 {
     transparent
-    websocket
+    header_upstream Connection {>Connection}
+    header_upstream Upgrade {>Upgrade}
   }
   log stdout
 }
