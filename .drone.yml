@@ -13,3 +13,4 @@ pipeline:
     secret_key: ${RANCHER_SECRET_KEY}
     service: Infra/infra
     docker_image: iteam1337/rancher-caddy:latest
+    start_first: false
