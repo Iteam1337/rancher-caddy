@@ -18,9 +18,9 @@ https://rancher.iteam.life {
   tls info@iteam.se
   proxy / 172.17.0.1:8080 {
     transparent
+    websocket
   }
   log stdout
-  websocket
 }
 
 https://registry.iteam.life {
