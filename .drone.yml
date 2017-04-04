@@ -14,3 +14,4 @@ pipeline:
     service: Infra/infra
     docker_image: iteam1337/rancher-caddy:latest
     start_first: false
+    confirm: true
