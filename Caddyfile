@@ -2,6 +2,8 @@ https://drone.iteam.life {
   tls info@iteam.se
   proxy / drone-server:8000 {
     transparent
+    header_upstream Connection {>Connection}
+    header_upstream Upgrade {>Upgrade}
   }
   log stdout
 }
@@ -28,8 +30,6 @@ https://registry.iteam.life {
   tls info@iteam.se
   proxy / registry:5000 {
     transparent
-    header_upstream Connection {>Connection}
-    header_upstream Upgrade {>Upgrade}
   }
   log stdout
 }
