@@ -18,7 +18,7 @@ https://izone.iteam.life {
 
 https://rancher.iteam.life {
   tls info@iteam.se
-  proxy / redirect-rancher-ui:3000 {
+  proxy / redirect-rancher-ui {
     transparent
     header_upstream Connection {>Connection}
     header_upstream Upgrade {>Upgrade}
