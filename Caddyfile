@@ -1,3 +1,11 @@
+https://drone.iteam.life {
+  tls info@iteam.se
+  proxy / drone-server:8000 {
+    transparent
+  }
+  log stdout
+}
+
 https://izone.iteam.life {
   tls info@iteam.se
   proxy / izone-rest:3000 {
