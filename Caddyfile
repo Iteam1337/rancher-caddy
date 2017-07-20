@@ -4,7 +4,5 @@ https://izone.iteam.life {
     transparent
   }
   log stdout
-  header /slack {
-    +Content-Type "application/json"
-  }
+  header_upstream /slack Content-Type "application/json"
 }
