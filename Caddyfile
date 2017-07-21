@@ -10,7 +10,7 @@ https://izone.iteam.life {
   tls info@iteam.se
   proxy / izone-rest:3000 {
     transparent
+    header_upstream Content-Type {remote}
   }
   log stdout
-  header_upstream /slack Content-Type "application/json"
 }
