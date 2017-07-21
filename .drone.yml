@@ -8,7 +8,7 @@ pipeline:
     tags: latest
   rancher:
     image: peloton/drone-rancher
-    url: http://5.35.191.41:8080
+    url: http://192.168.100.41:8080
     access_key: ${RANCHER_ACCESS_KEY}
     secret_key: ${RANCHER_SECRET_KEY}
     service: Infra/infra
