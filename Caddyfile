@@ -10,7 +10,7 @@ https://izone.iteam.life {
   tls info@iteam.se
   proxy / izone-rest:3000 {
     transparent
-    header_upstream Content-Type {remote}
+    header_upstream Content-Type {>Content-Type}
   }
   log stdout
 }
